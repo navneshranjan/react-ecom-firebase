@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
+import { CartProvider } from "react-use-cart";
 
 ReactDOM.render(
   <BrowserRouter>
-    <React.StrictMode>
+    <CartProvider>
       <App />
-    </React.StrictMode>
+    </CartProvider>
   </BrowserRouter>,
   document.getElementById("root")
 );
