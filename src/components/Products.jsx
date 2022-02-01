@@ -36,10 +36,11 @@ const Products = () => {
       {/* {product.map((item) => (
         <ProductItems key={item.id} {...item} item={item} />
       ))} */}
-
-      {product.map((item, id) => (
-        <ProductItems key={id} {...item} item={item} />
-      ))}
+      <div className="product_page">
+        {product.map((item, id) => (
+          <ProductItems key={id} {...item} item={item} />
+        ))}
+      </div>
 
       <div className="footer_cart_info">
         <div className="price-component">
