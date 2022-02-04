@@ -8,6 +8,12 @@ import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
   apiKey: "AIzaSyAeusQWD-MKEEwHAIwucS2S_xpSpz9zq5Q",
   authDomain: "food-shop-8e933.firebaseapp.com",
+
+  // to update multi image of a product  we have to use databaseURL:
+  // go to firebase  make allow to true storage>rule>allow read,write:if true;
+
+  databaseURL: "gs://food-shop-8e933.appspot.com",
+
   projectId: "food-shop-8e933",
   storageBucket: "food-shop-8e933.appspot.com",
   messagingSenderId: "893407969221",

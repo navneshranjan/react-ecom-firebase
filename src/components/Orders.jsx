@@ -35,7 +35,7 @@ const Orders = () => {
           <ul>
             {JSON.parse(item.orderDetails).map((e) => (
               <li key={e.id}>
-                {e.title} - {e.quantity}
+                {e.name} - {e.quantity}
               </li>
             ))}
           </ul>
